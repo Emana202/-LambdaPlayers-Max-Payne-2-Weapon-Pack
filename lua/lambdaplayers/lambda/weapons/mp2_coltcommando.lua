@@ -11,7 +11,7 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
 
         clip = 30,
         keepdistance = 750,
-        attackrange = 2000,
+        attackrange = 1500,
 
         reloadtime = 2.2,
         reloadanim = ACT_HL2MP_GESTURE_RELOAD_AR2,

@@ -13,8 +13,8 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
         dropentity = "ent_mp2tfomp_pumpshotgun",
 
         clip = 7,
-        keepdistance = 500,
-        attackrange = 2000,
+        keepdistance = 400,
+        attackrange = 1000,
 
         reloadtime = 2.25,
         reloadanim = ACT_HL2MP_GESTURE_RELOAD_SHOTGUN,
