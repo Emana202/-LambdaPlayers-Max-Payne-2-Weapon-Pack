@@ -160,6 +160,7 @@ if ( SERVER ) then
 	local function LambdaGetActiveWeapon( lambda )
 		return lambda.WeaponEnt
 	end
+	local function NullFunction() end
 
 	local function WeaponFireCallBack( weapon, attacker, tr, dmginfo, phys_bullet_ent )
 		if !IsValid( attacker ) then return end
@@ -208,6 +209,7 @@ if ( SERVER ) then
 		weapon.MP2Data.DoImpactEffect = weapon.MP2Data.StoredTable.DoImpactEffect
 
 		lambda.GetActiveWeapon = LambdaGetActiveWeapon
+		weapon.SetClip1 = NullFunction
 		weapon.FireCallBack = WeaponFireCallBack
 		weapon.FireCallBackImpact = WeaponFireCallBackImpact
 	end
